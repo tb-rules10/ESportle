@@ -1,0 +1,108 @@
+<%- include('partials/navbar-news')%>
+
+
+        <div class="container">
+            <div class="panel active" style="background-image: url('https://thegamehaus.com/wp-content/uploads/2020/03/Bjerger-Sen-scaled.jpg')">
+                <a class="color-me" href="/title/3"></a>
+                <h3><a class="color-me" href="/title/3">Bjergsen sets incredible new LCS record for most career kills</a></h3>
+            </div>
+            <div class="panel" style="background-image: url('https://cdn.oneesports.gg/cdn-data/2022/08/TekkenBloodline_EasterEggs_Featured-1536x864.jpg')">
+                <a class="color-me" href="/title/0"></a>
+                <h3><a class="color-me" href="/title/0">7 Tekken Bloodline Easter eggs only true Tekken gods can catch</a></h3>
+            </div>
+            <div class="panel" style="background-image: url('https://www.theloadout.com/wp-content/sites/theloadout/2022/09/league-of-legends-g2-hel-roster-announcement.jpg')">
+                <a class="color-me" href="/title/1"></a>
+                <h3><a class="color-me" href="/title/1">G2 sign all-women’s League of Legends roster: G2 Hel</a></h3>
+            </div>
+            <div class="panel" style="background-image: url('https://www.dexerto.com/_next/image/?url=https%3A%2F%2Feditors.dexerto.com%2Fwp-content%2Fuploads%2F2022%2F08%2F31%2Ffaker-amber-razer-campaign.jpg&w=640&q=75')">
+                <a class="color-me" href="/title/2"></a>
+                <h3><a class="color-me" href="/title/2">How Faker and Paladin Amber made dreams reality in esports & streaming</a></h3>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        
+        <div class="news-cont">
+            <h1>Latest News</h1>
+            <h3>Get The Latest From Around The World:</h3>
+            <br>
+            <ul>
+                <% let i = -1; let count = 0; %>
+                <% for(let c of news) {%>
+                    <%  count = count + 1; %>
+                    <% if(i === -1) {%>
+                        <% if(count > 5) {%>
+                            <li class="newslist hide" style="border: 1px solid white;">
+                        <% }%>
+                        <% if(count <=5) {%>
+                            <li class="newslist" style="border: 1px solid white;">
+                        <% }%>
+                            <img src="<%= c.image %> "  alt="not-again">
+                                <div class="news-section" >           
+                                    <br>
+                                    <a href="/title/<%= c.num %> "><h2><%= c.title %> </h2></a>
+                                    <br>
+                                    <p><%= c.content.split(' ').slice(0, 40).join(' ') %>... <a style="color: blue;" href="/title/<%= c.num %> ">(more)</a></p>
+                                </div>
+                        </li>
+                    <% }%>
+                    
+                    <% if(i === 1)  {%>
+                        <% if(count > 5) {%>
+                            <li class="newslist hide" style="border: 1px solid rgb(0, 0, 0);">
+                        <% }%>
+                        <% if(count <=5) {%>
+                            <li class="newslist" style="border: 1px solid rgb(0, 0, 0);">
+                        <% }%>
+                        <div class="news-section">
+                            <br>
+                            <a href="/title/<%= c.num %> "><h2><%= c.title %> </h2></a>
+                            <br>
+                            <p><%= c.content.split(' ').slice(0, 40).join(' ') %>... <a style="color: blue;" href="/title/<%= c.num %>">(more)</a></p>
+                        </div>
+                        <img src="<%= c.image %> "  alt="X">
+                        </li>
+                    <% }%>
+                    
+                    <% i = i * -1;%>
+                    </br>
+                <% }%>
+            </ul>
+        </div>
+
+        
+        <!-- <button><a href="/all">Load More...</a></button> -->
+        <button class="more btn41-43 btn-42" style="margin-bottom: 5vh;">Load More</button>
+        
+        <script>
+            const panels = document.querySelectorAll('.panel');
+            var count;
+            panels.forEach(panel => {
+                panel.addEventListener('mouseover', () => {
+                    removeActiveClasses()
+                    panel.classList.add('active')
+                })
+            })
+            function removeActiveClasses() {
+                panels.forEach(panel => {
+                    panel.classList.remove('active')
+                })
+            }
+            var news_cont = Array.from(document.querySelectorAll('.newslist'));
+            var button = document.querySelector('.more');
+            count = 8;
+            button.addEventListener('click', () => {
+                news_cont.slice(count-3,count).forEach(block => {
+                    block.classList.remove('hide');
+                })
+                count = count + 3;
+                console.log(news_cont.length);
+                if(count >= news_cont.length+3){
+                    button.classList.add('hide');
+                }
+            })
+        </script>
+
+<%- include('partials/footer')%>

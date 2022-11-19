@@ -1,0 +1,32 @@
+<%- include('partials/navbar-news')%>
+
+<br>
+<div class="news-box">
+    <div class="newsBYid">
+        <h1 class="news-head"><h1><%= newz.title %></h1></h1>
+    </div>
+    <br>
+    <img src="<%= newz.image %>" alt="not-again" class="head-img">
+    <br>
+    <br>
+    <% const arr =newz.content.split('\n') %>
+    <%for(c in arr){%>
+        <% if(arr[c].charAt(0) === '-') {%>
+        <h3 class="news-sub-head"><%= arr[c].substring(1,arr[c].length) %></h3>
+        <br>
+        <% }else if (arr[c].charAt(0) === '*') { %>
+            <div class="news-image">
+                <img src="<%= arr[c].substring(1,arr[c].length) %>" class="news-img" alt="blog-image">
+                <br>
+                <br>
+            </div>
+        <% }else{ %>
+        <p><%= arr[c] %></p>
+        <br>
+    <%}}%>
+    </div>
+    <br>
+
+
+
+<%- include('partials/footer')%>
