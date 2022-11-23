@@ -14,7 +14,7 @@ app.use(express.json())
 // To 'fake' put/patch/delete requests:
 app.use(methodOverride('_method'))
 // Views folder and EJS setup:
-app.set('views', path.join(__dirname, 'views'))
+// app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
 
