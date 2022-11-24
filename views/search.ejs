@@ -1,0 +1,41 @@
+<%- include('partials/navbar-news')%>
+
+<br>
+
+<div class="news-cont">
+    <h1 style="font-size: 2rem;"><%= head %></h1>
+    <br>
+    <ul>
+        <% let i = -1; let count = 0; %>
+        <% for(let c of found) {%>
+            <% if(c.content == ''){ %>
+                
+                <li class="newslist" style="border: 1px solid white;">
+                    <img src="<%= c.image %> "  alt="not-again">
+                    <div class="news-section" >           
+                        <br>
+                        <a href="/news"><h2><%= c.title %> </h2></a>
+                        <br>
+                        <p>Please try again with some different keywords.</p>
+                    </div>
+                </li>
+        </br>
+
+
+                <% break; } %> 
+                <li class="newslist" style="border: 1px solid white;">
+                        <img src="<%= c.image %> "  alt="not-again">
+                        <div class="news-section" >           
+                            <br>
+                            <a href="/title/<%= c.num %> "><h2><%= c.title %> </h2></a>
+                            <br>
+                            <p><%= c.content.split(' ').slice(0, 40).join(' ') %>... <a style="color: blue;" href="/title/<%= c.num %> ">(more)</a></p>
+                        </div>
+                    </li>
+            </br>
+        <% }%>
+    </ul>
+</div>
+<br>
+
+<%- include('partials/footer')%>

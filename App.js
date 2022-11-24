@@ -14,7 +14,7 @@ app.use(express.json())
 // To 'fake' put/patch/delete requests:
 app.use(methodOverride('_method'))
 // Views folder and EJS setup:
-// app.set('views', path.join(__dirname, 'views'))
+app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
 
@@ -53,6 +53,29 @@ app.get('/allnews', (req, res) => {
 
 app.get('/', (req, res) => {
     res.render('home');
+})
+
+
+app.post('/search', (req, res) => {
+    // console.log(req.body);
+    const{search:s} = req.body;
+    // console.log(s); 
+    var found = [];
+    var head = `Search Results for: ${s}`;
+    for(let newz of news){
+        // console.log(newz);
+        if ((newz.title.toUpperCase()).includes(s.toUpperCase())){
+            // console.log('***********************');
+            found.push(newz);
+        }
+    }
+    if(found.length === 0){
+        found.push({ content: '', title: 'Sorry, but nothing matched your search terms.', image:'https://cdn-icons-png.flaticon.com/512/6134/6134116.png' });
+        head = "Nothing Found";
+
+    }
+    // console.log(found);
+    res.render('search', {found,head})  
 })
 
 
