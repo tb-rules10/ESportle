@@ -28,7 +28,8 @@ var news = []
 
 
 app.get('/games', (req, res) => {
-    res.render('games');
+    // res.render('games');
+    res.render('games1');
 })
 
 app.get('/title/:id', (req, res) => {
@@ -106,7 +107,7 @@ app.post('/login', async (req, res) => {
 
 
 app.get('/register', (req, res) => {
-    res.render('register');
+    res.render('register', {Invalid : ""});
 })
 
 
@@ -114,6 +115,11 @@ app.post('/register', async (req, res) => {
     try{
         const{ name,email,password } = req.body;
         console.log(`${name}  -  ${email}  -  ${password}`)
+        var regex = /^(?!.{a-zA-Z})(\w+\s+\w+ ?)$/;
+        if (regex.test(name) == false){
+            res.render("register", {Invalid : "Invalid Name"})
+            return;
+        }
         const User = Register({
             username: name,
             useremail: email,
@@ -122,15 +128,19 @@ app.post('/register', async (req, res) => {
         console.log(User);
         const registered = await User.save();
         console.log(`${name}  -  ${email}  -  ${password}`)
-        res.status(201).send("MKC");
+        res.render(home);
     }
     catch(error){
         res.send(error);
     }
 })
 
+
 app.get('*', (req, res) => {
-    res.render('error');
+    found = []
+    found.push({ content: '', title: 'Sorry, but nothing matched your search terms.', image:'https://cdn-icons-png.flaticon.com/512/6134/6134116.png' });
+    head = "404 Not Found";
+    res.render('search', {found,head})
 })
 
 

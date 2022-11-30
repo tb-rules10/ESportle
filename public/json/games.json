@@ -1,0 +1,64 @@
+{
+    "navbar": {
+        "logo": "/images/logo1.png",
+        "teams": {
+            "0": {
+                "name": "Team SOUL",
+                "link": "https://liquipedia.net/pubgmobile/Team_SouL"
+            },
+            "1": {
+                "name": "Team TSM",
+                "link": "https://liquipedia.net/pubgmobile/TSM"
+            },
+            "2": {
+                "name": "Team GODLIKE",
+                "link": "https://liquipedia.net/pubgmobile/GodLike_Esports"
+            },
+            "3": {
+                "name": "Team 7SEAS",
+                "link": "https://liquipedia.net/pubgmobile/7Sea_Esports"
+            },
+            "4": {
+                "name": "Team ENIGMA",
+                "link": "hhttps://www.enigmagamingindia.com/"
+            }
+        },
+        "signup": "/images/sign.png"
+    },
+
+    "bg-video": {
+        "video": "/videos/3dgames.mp4"
+    },
+
+    "cards":{
+        "0": {
+            "img": "url(/images/games/apex.png)",
+            "link": "https://www.ea.com/en-gb/games/apex-legends"
+        },
+        "1": {
+            "img": "url(/images/games/pubg.png)",
+            "link": "https://na.battlegrounds.pubg.com/"
+        },
+        "2": {
+            "img": "url(/images/games/LOL.png)",
+            "link": "https://www.leagueoflegends.com/en-gb/"
+        },
+        "3": {
+            "img": "url(/images/games/valorant.png)",
+            "link": "https://playvalorant.com/en-gb/"
+        },
+        "4": {
+            "img": "url(/images/games/codw.png)",
+            "link": "https://www.callofduty.com/warzone"
+        }
+    },
+
+    "footer": {
+        "icons": ["https://cdn-icons-png.flaticon.com/512/3670/3670127.png","https://cdn-icons-png.flaticon.com/512/187/187209.png","https://cdn-icons-png.flaticon.com/512/3955/3955024.png","https://cdn-icons-png.flaticon.com/512/5968/5968764.png","https://cdn-icons-png.flaticon.com/512/3670/3670157.png"],
+        "logo": "/images/logo1.png",
+        "copyright": "© 2022, Copyright: ESportle : Tanishq Bhatt, Aayush  Dubey & Siddhant Sharma.",
+        "end": "'GG' stands for a  'GOOD GAME'"
+    }
+
+}
+
