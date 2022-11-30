@@ -96,12 +96,12 @@ app.post('/login', async (req, res) => {
         res.render("home")
        }else{
         // alert("Invalid Credentials")
-        res.render("login", {Invalid : "Invalid Credentials"})
+        res.render("login", {Invalid : "Incorrect Password"})
     }
 
     }
     catch(error){
-        res.render("login")
+        res.render("login", {Invalid : "Invalid Credentials"})
     }
 })
 
@@ -125,13 +125,13 @@ app.post('/register', async (req, res) => {
             useremail: email,
             userpassword: password
         })
-        console.log(User);
+        // console.log(User);
         const registered = await User.save();
-        console.log(`${name}  -  ${email}  -  ${password}`)
-        res.render(home);
+        // console.log(`${name}  -  ${email}  -  ${password}`)
+        res.render("home");
     }
     catch(error){
-        res.send(error);
+        res.render("register", {Invalid : `${error}`})
     }
 })
 

@@ -7,7 +7,7 @@ let connectdb = async () => {
             useUnifiedTopology: true,
             useNewUrlParser: true
         })
-        console.log(`Connecter to ${URI}`)
+        console.log(`Connected to ${URI}`)
     }
     catch (err) {
         console.log(err)

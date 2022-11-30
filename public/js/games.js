@@ -45,10 +45,10 @@ class Games {
         let mid = document.createElement("div");
         mid.classList.add("mid-items");
         let home = document.createElement("a");
-        home.href = "/index.html";
+        home.href = "/";
         home.innerText = "Home";
         let news = document.createElement("a");
-        news.href = "/news.html";
+        news.href = "/news";
         news.innerText = "News"
         mid.appendChild(home);
         mid.appendChild(news);
@@ -80,13 +80,13 @@ class Games {
         search.classList.add("search-container");
         let form = document.createElement("form");
         form.action = "/search";
-        form.method = "get";
+        form.method = "post";
         let input = document.createElement("input");
         input.classList.add("search");
         input.classList.add("expandright");
         input.id = "searchright";
         input.type = "search";
-        input.name = "q";
+        input.name = "search";
         input.placeholder = "Search";
         let label = document.createElement("label");
         label.classList.add("button");
@@ -102,7 +102,7 @@ class Games {
         ////////
         let login = document.createElement("div");
         let signa = document.createElement("a");
-        signa.href = "/login.html";
+        signa.href = "/login";
         let simg = document.createElement("img");
         simg.classList.add("signup");
         simg.src = obj.signup;
@@ -200,10 +200,10 @@ class Games {
         let nav = document.createElement("div");
         nav.classList.add("navigation");
         let home = document.createElement("a");
-        home.href = "/index.html";
+        home.href = "/";
         home.innerText = "Home";
         let news = document.createElement("a");
-        news.href = "/news.html";
+        news.href = "/news";
         news.innerText = "News  "
         let games = document.createElement("a");
         games.href = "#";
