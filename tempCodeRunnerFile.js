@@ -1,2 +1,0 @@
-nnections/connectdb")
-connectdb()
