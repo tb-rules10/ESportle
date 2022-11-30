@@ -6,23 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/login.css">
   <title>Login</title>
+  <style>
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  </style>
 </head>
 <body>
   <!-- <div class="login"></div> -->
   <div class="login-form">
-    <form id="inputform">
+    <form action="/login" method="POST" id="inputform">
       <h1>Login</h1>
       <div class="content">
         <div class="input-field">
-          <input type="email" placeholder="Email" name="email" id="email" autocomplete="nope">
+          <input type="email" placeholder="Email" name="email" id="email" autocomplete="nope" required>
         </div>
         <div class="input-field">
-          <input type="password" placeholder="Password" name="password" id="password" autocomplete="new-password">
+          <input type="password" placeholder="Password" name="password" id="password" autocomplete="new-password" required>
         </div>
-        <a href="#" class="link">Forgot Your Password?</a>
+        <a href="#" style="color: red;font-size: 1.2rem;" class="link"><%= Invalid %> </a>
       </div>
       <div class="action">
-        <button>Register</button>
+        <a href="/register"><button>Register</a>
+          <!-- <button><a href="/register">Sign in</a></button> -->
         <button>Sign in</button>
       </div>
     </form>

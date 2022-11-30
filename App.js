@@ -3,7 +3,11 @@ const path = require('path');
 const methodOverride = require('method-override')
 const express = require('express');
 const app = express();
+const alert = require('alert');
 
+let connectdb = require('./connections/db')
+connectdb()
+let Register = require('./connections/data')
 
 app.use(express.static(path.join(__dirname, 'public')))
 
@@ -80,12 +84,56 @@ app.post('/search', (req, res) => {
 
 
 app.get('/login', (req, res) => {
-    res.render('login');
+    res.render('login', {Invalid : ""});
+})
+
+
+app.post('/login', async (req, res) => {
+    try{
+        const{ email,password } = req.body;  
+        const check = await Register.findOne({useremail:email});
+        console.log(check.userpassword)
+        console.log(password)
+    if(check.userpassword === password){
+        res.render("home")
+       }else{
+        // alert("Invalid Credentials")
+        res.render("login", {Invalid : "Invalid Credentials"})
+    }
+
+    }
+    catch(error){
+        res.render("login")
+    }
 })
 
 
 app.get('/register', (req, res) => {
     res.render('register');
+})
+
+
+app.post('/register', async (req, res) => {
+    try{
+        const{ name,email,password } = req.body;
+        console.log(`${name}  -  ${email}  -  ${password}`)
+        const User = Register({
+            username: name,
+            useremail: email,
+            userpassword: password
+        })
+        console.log(User);
+        const registered = await User.save();
+        console.log(`${name}  -  ${email}  -  ${password}`)
+        res.status(201).send("MKC");
+    }
+    catch(error){
+        res.send(error);
+    }
+})
+
+app.get('*', (req, res) => {
+    res.render('error');
 })
 
 

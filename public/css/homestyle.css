@@ -341,18 +341,20 @@ h3{
 
 .player-card{
   height: 70vh;
-  width: 30vw;
+  min-width: 23vw;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: 0 2vw;
+  margin: 0 1.5vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
   transition: 500ms ease-in;
 }
-
+/* .player-card:nth-of-type(1){
+  margin: 0 0 2vw 0;
+} */
 .dp{
   height: 100%;
   width: 100%;
@@ -365,22 +367,28 @@ h3{
 .playercards{
   margin: 0 2vw;
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  overflow-x: auto;
+  transition: 500ms ease-in;
 }
 .control{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 .controls img{
   height: 5vh;
   transition: 100ms ease-in-out;
 }
-.controls img:hover{
-  transform: scale(0.9);
+.controls img:active{
+  transform: scale(0.85);
 }
 .controls{
-  margin-right: 1.5vw;
+  margin-right: 1.3vw;
+  width: 7vw;
+  display: flex;
+  justify-content: space-around;
 }
 .information{
   display: flex;

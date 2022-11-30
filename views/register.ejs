@@ -1,45 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/login.css" />
-    <title>Login</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 style="font-size: 2.2rem;">Register</h1>
-      <form>
-        <div class="form-control">
-        <input type="text" required>
-        <label>Name</label>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/login.css">
+  <title>Login</title>
+  <style>
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- <div class="login"></div> -->
+  <div class="login-form">
+    <form action="/register" method="POST" id="inputform">
+      <h1>Register</h1>
+      <div class="content">
+        <div class="input-field">
+          <input type="text" placeholder="Name" name="name" id="name" autocomplete="nope" required>
         </div>
-
-        <div class="form-control">
-          <input type="text" required>
-          <label>Email</label>
+        <div class="input-field">
+          <input type="email" placeholder="Email" name="email" id="email" autocomplete="nope" required>
         </div>
-
-        <div class="form-control">
-          <input type="password" required>
-          <label>Password</label>
+        <div class="input-field">
+          <input type="password" placeholder="Password" name="password" id="password" autocomplete="new-password" required>
         </div>
-
-        <button class="btn">Register</button>
-
-        <p class="text">Already have an account? <a href="/login"> Log In</a> </p>
-      </form>
-    </div>
-
-    <script>
-        const labels = document.querySelectorAll('.form-control label')
-
-        labels.forEach(label => {
-            label.innerHTML = label.innerText
-                .split('')
-                .map((letter, idx) => `<span style="transition-delay:${idx * 50}ms">${letter}</span>`)
-                .join('')
-        })
-    </script>
-  </body>
+        <a href="#" class="link">Forgot Your Password?</a>
+      </div>
+      <div class="action">
+        <a href="/login"><button>Sign in</a>
+          <!-- <button><a href="/login">Sign in</a></button> -->
+        <button>Register</button>
+      </div>
+    </form>
+  </div>
+</body>
 </html>
