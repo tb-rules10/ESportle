@@ -3,7 +3,6 @@ const path = require('path');
 const methodOverride = require('method-override')
 const express = require('express');
 const app = express();
-const alert = require('alert');
 
 let connectdb = require('./connections/db')
 connectdb()
