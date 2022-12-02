@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESportle Games</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/homestyle.css">
+    <link rel="stylesheet" href="css/gamestyle.css">
+</head>
+<body>
+    <header>
+        <div class="navbar game-nav" id="navbar" style="background: transparent;">
+            <div class="logo">
+                <a href="/index.html"><img class="logoimg" src="images/logo1.png" alt=""></a>
+            </div>
+            <div class="mid-items">
+                <a href="/index.html">Home</a>
+                <a href="/news.html">News</a>
+                <!-- <a href="/shop.html">Shop</a> -->
+                <!-- <a href="#">Teams</a> -->
+                <div class="dropdown">
+                    <div class="dropbtn" style="cursor: pointer;font-size: 1.15vw;">Teams</div>
+                    <div class="dropdown-content">
+                      <a href="https://liquipedia.net/pubgmobile/Team_SouL" target="_blank">Team SOUL</a>
+                      <a href="https://liquipedia.net/pubgmobile/TSM" target="_blank">Team TSM</a>
+                      <a href="https://liquipedia.net/pubgmobile/GodLike_Esports" target="_blank">Team GODLIKE</a>
+                      <a href="https://liquipedia.net/pubgmobile/7Sea_Esports" target="_blank">Team 7SEAS</a>
+                      <a href="https://liquipedia.net/valorant/Enigma_Gamin" target="_blank">Team ENIGMA</a>
+                    </div>
+                  </div>
+                <a href="#">Games</a>
+            </div>
+            <div class="search-container">
+                <form action="/search" method="get">
+                <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+                <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+                </form>
+            </div>
+            <div class="login">
+                <a href="/login.html"><img class="signup" src="images/sign.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <div class="bg-video" style="margin-bottom: 3vh">
+        <video autoplay muted loop src="videos/3dgames.mp4" alt="not-again"></video>
+        <H1 CLASS="head">Everything about your FAVOURITE GAME!!</H1>
+        <a data-scroll href="#games">
+            <div class="arrow"></div>
+          </a>
+    </div>
+    <div id="games">
+        
+        <h1>PROMOTED GAMES</h1>
+
+        <div class="game-cards">
+            <div class="gcard" style="background-image: url(images/games/apex.png);"><a href="https://www.ea.com/en-gb/games/apex-legends" target="_blank"></a></div>
+            <div class="gcard" style="background-image: url(images/games/pubg.png);"><a href="https://na.battlegrounds.pubg.com/" target="_blank"></a></div>
+            <div class="gcard" style="background-image: url(images/games/LOL.png);"><a href="https://www.leagueoflegends.com/en-gb/" target="_blank"></a></div>
+            <div class="gcard" style="background-image: url(images/games/valorant.png);"><a href="https://playvalorant.com/en-gb/" target="_blank"></a></div>
+            <div class="gcard" style="background-image: url(images/games/codw.png);"><a href="https://www.callofduty.com/warzone" target="_blank"></a></div>
+        </div
+    </div>
+
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+
+    <footer>
+        
+        <div class="footer" style="background: #0F0F0F; margin-top:8vh">
+            <div class="social-media">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670127.png" alt=""></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/187/187209.png" alt=""></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3955/3955024.png" alt=""></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt=""></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670157.png" alt=""></a>
+            </div>
+            <div class="f-logo">
+                <a href="#"><img class="logoimg" src="images/logo1.png" alt=""></a>
+            </div>
+            <p>© 2022, Copyright: ESportle : Tanishq Bhatt, Aayush  Dubey & Siddhant Sharma.</p>
+            <div class="navigation">
+                <a href="/index.html">Home</a>
+                <a href="/news.html">News</a>
+                <!-- <a href="/shop.html">Shop</a> -->
+                <a href="/shop.html">Games</a>
+            </div>
+            <div class="end">
+                <hr style="margin-bottom:5vh;">
+                "GG" stands for a  "GOOD GAME"
+            </div>
+        </div>    
+    
+    </footer>
+    </body>
+    </html>
