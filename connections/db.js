@@ -1,5 +1,5 @@
 let mongoose = require('mongoose')
-let URI = "mongodb+srv://esportle:UjhOHC3N6ni2KLmC@cluster0.yg9q4e3.mongodb.net/?retryWrites=true&w=majority"
+let URI = "" // Add your connection string
 
 let connectdb = async () => {
     try {
