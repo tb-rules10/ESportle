@@ -89,8 +89,8 @@ app.post('/login', async (req, res) => {
     try{
         const{ email,password } = req.body;  
         const check = await Register.findOne({useremail:email});
-        console.log(check.userpassword)
-        console.log(password)
+        // console.log(check.userpassword)
+        // console.log(password)
     if(check.userpassword === password){
         res.render("home")
        }else{
