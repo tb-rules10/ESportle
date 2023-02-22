@@ -110,6 +110,17 @@ app.get('/register', (req, res) => {
 })
 
 
+app.post("/data",(req, res) => {
+    try {
+        // const { name } = req.body;
+        console.log(req.body);
+        return res.json({ status: true });
+      }
+      catch (err) {
+        console.log(err);
+      }
+})
+
 app.post('/register', async (req, res) => {
     try{
         const{ name,email,password } = req.body;
