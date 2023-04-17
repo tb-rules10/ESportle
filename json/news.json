@@ -1,0 +1,93 @@
+{
+    "navbar": {
+        "logo": "/images/logo1.png",
+        "teams": {
+            "0": {
+                "name": "Team SOUL",
+                "link": "https://liquipedia.net/pubgmobile/Team_SouL"
+            },
+            "1": {
+                "name": "Team TSM",
+                "link": "https://liquipedia.net/pubgmobile/TSM"
+            },
+            "2": {
+                "name": "Team GODLIKE",
+                "link": "https://liquipedia.net/pubgmobile/GodLike_Esports"
+            },
+            "3": {
+                "name": "Team 7SEAS",
+                "link": "https://liquipedia.net/pubgmobile/7Sea_Esports"
+            },
+            "4": {
+                "name": "Team ENIGMA",
+                "link": "hhttps://www.enigmagamingindia.com/"
+            }
+        },
+        "signup": "/images/sign1.png"
+    },
+
+
+    "newscard": {
+        "bgimg_1": "url('https://thegamehaus.com/wp-content/uploads/2020/03/Bjerger-Sen-scaled.jpg')",
+        "href1_1": "/news1.html",
+        "href1_2": "/news1.html",
+        "txt_1": "Bjergsen sets incredible new LCS record for most career kills",
+
+        "bgimg_2": "url('https://cdn.oneesports.gg/cdn-data/2022/08/TekkenBloodline_EasterEggs_Featured-1536x864.jpg')",
+        "href2_1": "/title/0",
+        "href2_2": "/title/0",
+        "txt_2": "7 Tekken Bloodline Easter eggs only true Tekken gods can catch",
+
+        "bgimg_3": "url('https://www.theloadout.com/wp-content/sites/theloadout/2022/09/league-of-legends-g2-hel-roster-announcement.jpg')",
+        "href3_1": "/title/1",
+        "href3_2": "/title/1",
+        "txt_3": "G2 sign all-women’s League of Legends roster: G2 Hel",
+        
+        "bgimg_4": "url('https://www.dexerto.com/_next/image/?url=https%3A%2F%2Feditors.dexerto.com%2Fwp-content%2Fuploads%2F2022%2F08%2F31%2Ffaker-amber-razer-campaign.jpg&w=640&q=75')",
+        "href4_1": "/title/2",
+        "href4_2": "/title/2",
+        "txt_4": "How Faker and Paladin Amber made dreams reality in esports & streaming"
+    },
+
+    "newscont": {
+        "txt_h1": "Latest News",
+        "txt_h3": "Get the Latest From Around The World:",
+        
+        "img_link1": "https://cdn.oneesports.gg/cdn-data/2022/08/TekkenBloodline_EasterEggs_Featured-1536x864.jpg",
+        "li_1": "7 Tekken Bloodline Easter eggs only true Tekken gods can catch",
+        "p_1": "Netflix’s Tekken Bloodline anime unravels the story of Jin Kazama and his mysterious martial arts lineage. Working off almost three decades of lore, the series producers snuck in a few secret references for diehard Tekken fans out there. Tekken chief producer... ",
+        "p_2": "(more)",
+
+        "img_link2": "https://www.dexerto.com/_next/image/?url=https%3A%2F%2Feditors.dexerto.com%2Fwp-content%2Fuploads%2F2022%2F09%2F01%2FG2-Hel-1.jpg&w=640&q=75",
+        "li_2": "G2 sign all-women’s League of Legends roster: G2 Hel",
+        "p_3": "As women’s esports continue to grow, more and more major organizations are looking to invest in the space. With multiple organizations picking up women’s-only teams to compete in Valorant’s Game Changers initiative, we’re seeing more involvement in women’s esports than... ",
+        "p_4": "(more)",
+
+        "img_link3": "https://www.dexerto.com/_next/image/?url=https%3A%2F%2Feditors.dexerto.com%2Fwp-content%2Fuploads%2F2022%2F08%2F31%2Ffaker-amber-razer-campaign.jpg&w=640&q=75",
+        "li_3": "How Faker and Paladin Amber made dreams reality in esports & streaming",
+        "p_5": "Being at the top of your game isn’t something that happens by chance, and that couldn’t ring more true than in the world of esports, gaming, and content. Be it a championship trophy, an insane performance, or a viral clip... ",
+        "p_6": "(more)",
+
+        "img_link4": "https://www.dexerto.com/_next/image/?url=https%3A%2F%2Feditors.dexerto.com%2Fwp-content%2Fuploads%2F2020%2F10%2Fbjergsen-TSM-announcement-retire-head-coach.jpg&w=640&q=75",
+        "li_4": "Bjergsen sets incredible new LCS record for most career kills",
+        "p_7": "The mid-lane star is known for his eight-season long stint at TSM and is considered to be one of the best players in the entire league. Now, following his return to pro-play in 2022 competing under the Team Liquid banner...  ",
+        "p_8": "(more)",
+        "a1": "/news1.html",
+
+        "img_link5": "https://pbs.twimg.com/media/Fbkc2KfXEAArvKF.jpg",
+        "li_5": "NAVI announce Road to Valorant academy project to find new players",
+        "p_9": "NAVI have announced an overhaul of their Valorant division, starting with the departure of three players from their main team — Denis dinkz Tkachev, Mikhail Duno Fokin and Nikolai zeddy Lapko after an unsuccessful qualifying campaign for Champions. The Ukrainian organization....",
+        "p_0": "(more)"
+    },
+
+
+
+    "footer": {
+        "icons": ["https://cdn-icons-png.flaticon.com/512/3670/3670127.png","https://cdn-icons-png.flaticon.com/512/187/187209.png","https://cdn-icons-png.flaticon.com/512/3955/3955024.png","https://cdn-icons-png.flaticon.com/512/5968/5968764.png","https://cdn-icons-png.flaticon.com/512/3670/3670157.png"],
+        "logo": "/images/logo1.png",
+        "copyright": "© 2022, Copyright: ESportle : Tanishq Bhatt, Aayush  Dubey & Siddhant Sharma.",
+        "end": "'GG' stands for a  'GOOD GAME'"
+    }
+
+}
+

@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    overflow-x: hidden;
+}
+.logoimg{
+    height: 6vh;
+    width: 11vw;
+    margin-top: 0.8vh;
+}
+.signup{
+    height: 5vh;
+}
+.gradient{
+    background: rgb(153,34,30);background: linear-gradient(90deg, rgba(153,34,30,1) 25%, rgba(95,100,104,1) 35%, rgba(65,89,94,1) 66%, rgba(1,67,73,1) 80%, rgba(41,80,85,1) 100%);
+}
+a{
+    
+    text-decoration: none;
+}
+.drpbtn, .mid-items a{
+    font-size: 1.15vw;
+}
+
+.mid-items{
+    justify-content: space-between;
+    width: 28vw;
+    margin-right: 10vw;
+}
+.navbar, .search, .mid-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: .75vw;
+    padding-bottom: .75vw;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgb(0, 0, 0);
+    opacity: 0.9;
+    border-radius: 0px;
+    min-width: 5vw;
+    box-shadow: 9px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 20px 20px;
+    text-decoration: none;
+    display: block;
+    text-align:center;
+  }
+  
+  .dropdown-content a:hover {
+    background-color:white;
+  }
+
+  .dropbtn:hover{
+    color: #a8baba;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.button {
+    display: inline-block;
+    margin: 4px 2px;
+    background-color: transparent;
+    font-size: 14px;
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.button:hover {
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    background-color: #d7e0e0;
+}
+
+.search-container {
+    right: 12vw;
+    position: absolute;
+    display: inline-block;
+    margin: 4px 2px;
+    height: 50px;
+    width: 50px;
+}
+
+.mglass {
+    display: inline-block;
+    pointer-events: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+}
+
+.searchbutton {
+    position: absolute;
+    font-size: 22px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.button {
+    display: inline-block;
+    margin: 4px 2px;
+    background-color: transparent;
+    font-size: 14px;
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.button:hover {
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    background-color: #d7e0e0;
+}
+
+.search-container {
+    right: 12vw;
+    position: absolute;
+    display: inline-block;
+    margin: 4px 2px;
+    height: 50px;
+    width: 50px;
+}
+
+.mglass {
+    display: inline-block;
+    pointer-events: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+}
+
+.searchbutton {
+    position: absolute;
+    font-size: 22px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.search {
+    position: absolute;
+    left: 400px; /* Button width-1px (Not 50px/100% because that will sometimes show a 1px line between the search box and button) */
+    background-color: rgb(255, 255, 255);
+    color: black;
+    outline: none;
+    border: none;
+    padding: 0;
+    width: 0;
+    height: 100%;
+    z-index: 10;
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+}
+
+.search:focus {
+    width: 15vw; /* Bar width+1px */
+    padding: 0 16px 0 0;
+}
+
+.expandright {
+    left: auto;
+    right: 49px; /* Button width-1px */
+}
+
+.expandright:focus {
+    padding: 0 0 0 16px;
+}
+
+.search {
+    position: absolute;
+    left: 400px; /* Button width-1px (Not 50px/100% because that will sometimes show a 1px line between the search box and button) */
+    background-color: rgb(255, 255, 255);
+    color: black;
+    outline: none;
+    border: none;
+    padding: 0;
+    width: 0;
+    height: 100%;
+    z-index: 10;
+    transition-duration: 0.4s;
+}
+
+.search:focus {
+    width: 15vw; /* Bar width+1px */
+    padding: 0 16px 0 0;
+}
+
+.expandright {
+    left: auto;
+    right: 49px; /* Button width-1px */
+}
+
+.expandright:focus {
+    padding: 0 0 0 16px;
+}
+
+.hide{
+    position: absolute;
+    visibility: hidden;
+}
+hr { display: block; height: 1px;
+    border: 0; border-top: 0.1px solid rgb(137, 132, 132);
+    margin: 1em 0; padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.login, .signup{
+    transition: 200ms ease-in-out;
+}
+.login:hover, .signup:hover{
+    transform: scale(1.1);
+}
+
+.panel a{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.social-media img{
+    height: 5vh;
+}
+.social-media a:hover{
+    /* transform: rotateY(360deg); */
+    transform: scale(1.2);
+    filter: brightness(120%);
+}
+.social-media a{
+    transition: .3s ease-in-out;
+}
+.social-media{
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* background: #2B2B2B; */
+    
+    height: 50vh;
+    padding: 20PX 0;
+}
+.footer p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+.f-logo{
+    margin: 15px 0;
+}
+.navigation a:hover{
+    display: block;
+    height: 3vh;
+    width: 8vw;
+    
+    padding: 10px;
+
+    text-align: center;
+    border-radius: 5px;
+    background: #1b1919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation a{
+    display: block;
+    height: 2vh;
+    width: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.navigation{
+    height: 10vh;
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.end{
+    width: 50vw;
+    text-align: center;
+}
+.if-color1{
+    
+}
+.gcard a, .panel a{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.disabled-link {
+    pointer-events: none;
+  }

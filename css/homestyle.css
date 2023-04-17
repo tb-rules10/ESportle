@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+*{
+    color: white;
+}
+body{
+  background-color: black;
+}
+.mid-items a:hover{
+    color: #a8baba;
+}
+.navbar{
+  
+    justify-content: space-around;
+    
+}
+
+.search:focus + .searchbutton {
+    transition-duration: 0.4s;
+    background-color: rgb(0, 0, 0);
+}
+.container {
+    display: flex;
+    width: 100vw;
+}
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90.4vh;
+    color: #fff;
+    cursor: pointer;
+    flex: 2.5;
+    margin: 10;
+    position: relative;
+    transition: all 700ms ease-in;
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+.panel:hover {
+    flex: 6;
+}
+.panel:hover h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out 0.4s;
+}
+
+h2{
+    font-family: 'Teko', sans-serif;
+    font-size: 2rem;
+    margin-left: 1.5vw;
+}
+
+                                
+.team-box{
+    width: 95vw;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.teams{
+    height: 60px;
+    width: 14vw;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+    box-sizing: border-box;
+}
+.teams:hover{
+  transform: scale(1.08);
+  /* border: 3px solid white; */
+}
+.team1{
+    background-color: #11C0F2;
+  }
+.team1:hover{
+    background-color: #00e2ff;
+  }
+.team2{
+    background-color: #5BBE95;
+  }
+  .team2:hover{
+      background-color: #42e699;
+    }
+.team3{
+    background-color: #d39818;
+  }
+  .team3:hover{
+    background-color: #ffae00;
+    }
+.team4{
+    background-color: #1B479E;
+  }
+  .team4:hover{
+    background-color: #195adc;
+    }
+.team5{
+    background-color: #4B096F;
+  }
+  .team5:hover{
+    background-color: #a600ff;
+    }
+.teams p, p b{
+    margin-top: -4px;
+    font-family: 'Oswald', sans-serif;
+}
+p b{
+    font-size: 1.1rem;
+}
+
+.teams .logo{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+
+/*------------------TWEETS------------------------------------------------*/
+
+.testimonial-container {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    margin: 20px auto 45px auto;
+    padding: 40px 80px;
+    max-width: 75vw;
+    position: relative;
+  }
+  
+  .fa-quote {
+    color: rgb(212, 47, 47);
+    height: 10px;
+    position: absolute;
+    
+  }
+  
+  .fas img{
+    height: 25px;
+    width: 25px;
+  }
+  
+  .fa-quote-right {
+    right: 30px;
+  }
+  
+  .fa-quote-left {
+    top: 58px;
+    left: 30px;
+  }
+  
+  .testimonial {
+    color: black;
+    line-height: 28px;
+    text-align: justify;
+  }
+  
+  .user {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .user .user-image {
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    object-fit: cover;
+  }
+  
+  .user .user-details {
+    margin-left: 10px;
+  }
+  
+  .user .username {
+    margin: 0;
+    color: black;
+  }
+  
+  .user .role {
+    font-weight: normal;
+    margin: 10px 0;
+    color: black;
+  }
+  
+  .progress-bar {
+    background-color: rgb(0, 0, 0);
+    height: 4px;
+    width: 100%;
+    animation: grow 10s linear infinite;
+    transform-origin: left;
+  }
+  
+  /* @keyframes grow {
+    0% {
+      transform: scaleX(0);
+    }
+  }
+   */
+/*------------------Watch Live------------------------------------------------*/
+
+.versus-img{
+    height: 5vh;
+    float: left;
+    margin-right: 10px;
+    margin-left: -10px;
+}
+.video{
+    height: 31.5vh;
+    background-color: #2B2B2B;
+    border-radius: 5px;
+}
+.watch-card{
+    background-color: #2B2B2B;
+    height: 58vh;
+    width: 28vw;
+    border-radius: 5px;
+    transition: 200ms linear;
+    box-sizing: border-box;
+
+}
+.watch-cont{
+
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.watch-card:hover{
+    transform: scale(1.03);
+    border: 3px solid white;
+    border-radius: 5px;
+    
+}
+.vs-teams ul{
+  display: flex;
+  justify-content: flex-start;
+}
+.content{
+    height: 26vh;
+    /* padding: 4vh 4vh; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.some-container{
+    background-color: #1a1616;
+    padding: 10px 0;
+}
+.video iframe{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0 0;
+}
+li{
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+p a:hover, a h3:hover{
+  text-decoration: underline;
+  
+}
+h3{
+    font-family: 'Teko', sans-serif;
+    font-size: 1.7rem;
+}
+
+.game-news{
+  margin: auto;
+  width: 93vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid white;
+}
+.game-img{
+    /* width: 50vw; */
+    height: 60vh;
+}
+.game-content{
+    margin-top: -10px;
+    width: 40vw;
+    padding: 3vh;
+}
+
+/*--------------------Highlights--------------------------*/
+.highlights-box .iframe{
+  display: block;
+  height: 25vh;
+  width: 20vw;
+}
+.highlight{
+  display: block;
+  height: 25vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 10px;
+  transition: all 200ms ease-in-out;
+  
+}
+.highlight p{
+  font-family: 'Oswald', sans-serif;
+}
+
+/* .highlights-box:hover .highlight{
+  filter: brightness(60%);
+}
+.highlights-box .highlight:hover{
+  filter: brightness(115%);
+  transform: scale(1.01);
+} */
+.highlights-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto 2vw;
+}
+
+/*--------------------Players--------------------------*/
+
+.player-card{
+  height: 70vh;
+  width: 30vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  transition: 500ms ease-in;
+}
+
+.dp{
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 300ms ease-in-out;
+
+}
+.playercards{
+  margin: 0 2vw;
+  display: flex;
+  justify-content: space-around;
+}
+.control{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.controls img{
+  height: 5vh;
+  transition: 100ms ease-in-out;
+}
+.controls img:hover{
+  transform: scale(0.9);
+}
+.controls{
+  margin-right: 1.5vw;
+}
+.information{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+  width: 100%;
+  background:  #2B2B2B;
+  opacity: 0.8;
+}
+.information:hover{
+  color: white;
+  filter: brightness(120%);
+}
+.effect{
+  visibility: hidden;
+  position: absolute;
+}
+.player-card:hover .effect{
+  visibility: visible;
+  position: relative;
+}

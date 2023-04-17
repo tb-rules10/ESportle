@@ -1,0 +1,45 @@
+let div = document.createElement("div");
+div.classList.add("login-form");
+let form = document.createElement("form");
+form.id = "inputform"
+form.action = "/index.html";
+div.appendChild(form);
+let h1 = document.createElement("h1");
+h1.innerText = "Login";
+form.appendChild(h1);
+let cont = document.createElement("div");
+cont.classList.add("content");
+let inf = document.createElement("div");
+inf.classList.add("input-field");
+let input = document.createElement("input");
+input.type = "email";
+input.placeholder = "Email";
+input.autocomplete = "nope";
+inf.appendChild(input);
+cont.appendChild(inf);
+let inf1 = document.createElement("div");
+inf1.classList.add("input-field");
+let input1 = document.createElement("input");
+input1.type = "password";
+input1.placeholder = "Password";
+input1.autocomplete = "new-password";
+inf1.appendChild(input1);
+cont.appendChild(inf1);
+let a = document.createElement("a");
+a.href = "#";
+a.classList.add("link");
+a.innerText = "Forgot Your Password?";
+cont.appendChild(a);
+form.appendChild(cont);
+let action = document.createElement("div");
+action.classList.add("action");
+let reg = document.createElement("button");
+let sign = document.createElement("button");
+reg.innerText = "Register";
+sign.innerText = "Sign in";
+action.appendChild(reg);
+action.appendChild(sign);
+form.appendChild(action);
+document.body.appendChild(div);
+
+

@@ -1,0 +1,47 @@
+{
+
+    "navbar": {
+        "logo": "/images/logo1.png",
+        "teams": {
+            "0": {
+                "name": "Team SOUL",
+                "link": "https://liquipedia.net/pubgmobile/Team_SouL"
+            },
+            "1": {
+                "name": "Team TSM",
+                "link": "https://liquipedia.net/pubgmobile/TSM"
+            },
+            "2": {
+                "name": "Team GODLIKE",
+                "link": "https://liquipedia.net/pubgmobile/GodLike_Esports"
+            },
+            "3": {
+                "name": "Team 7SEAS",
+                "link": "https://liquipedia.net/pubgmobile/7Sea_Esports"
+            },
+            "4": {
+                "name": "Team ENIGMA",
+                "link": "hhttps://www.enigmagamingindia.com/"
+            }
+        },
+        "signup": "/images/sign1.png"
+    },
+
+    "3": {
+        "num": 3,
+        "image": "https://www.dexerto.com/_next/image/?url=https%3A%2F%2Feditors.dexerto.com%2Fwp-content%2Fuploads%2F2020%2F10%2Fbjergsen-TSM-announcement-retire-head-coach.jpg&w=640&q=75",
+        "p1": "The mid-lane star is known for his eight-season long stint at TSM and is considered to be one of the best players in the entire league.",
+        "p2": "Now, following his return to pro-play in 2022 competing under the Team Liquid banner — and after a year of leading his former team TSM as their head coach — the 26-year-old player has set the record as the LCS‘ all-time kill leader.",
+        "img2": "https://www.dexerto.com/_next/image/?url=https%3A%2F%2Feditors.dexerto.com%2Fwp-content%2Fuploads%2F2020%2F10%2Fbjergsen-tsm-1024x576.jpg&w=1920&q=75",
+        "title": "Bjergsen sets incredible new LCS record for most career kills",
+        "content": "The veteran mid-laner is well respected and considered to be one of the world’s best by LCS fans. Now, he’s made a historic achievement.\nAlongside his impressive six LCS titles under his name, he can lay claim to the title as one of the greatest players in the league’s history.\nFollowing the close best-of-five series against 100 Thieves, the Danish mid-laner has set a new kill record. According to stats, Bjergsen is now the all-time LCS kill leader with 2,274 total kills – taking the record from veteran ADC WildTurtle."
+    },
+
+    "footer": {
+        "icons": ["https://cdn-icons-png.flaticon.com/512/3670/3670127.png","https://cdn-icons-png.flaticon.com/512/187/187209.png","https://cdn-icons-png.flaticon.com/512/3955/3955024.png","https://cdn-icons-png.flaticon.com/512/5968/5968764.png","https://cdn-icons-png.flaticon.com/512/3670/3670157.png"],
+        "logo": "/images/logo1.png",
+        "copyright": "© 2022, Copyright: ESportle : Tanishq Bhatt, Aayush  Dubey & Siddhant Sharma.",
+        "end": "'GG' stands for a  'GOOD GAME'"
+    }
+}
+

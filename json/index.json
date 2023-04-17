@@ -1,0 +1,150 @@
+{
+    "navbar": {
+        "logo": "/images/logo1.png",
+        "teams": {
+            "0": {
+                "name": "Team SOUL",
+                "link": "https://liquipedia.net/pubgmobile/Team_SouL"
+            },
+            "1": {
+                "name": "Team TSM",
+                "link": "https://liquipedia.net/pubgmobile/TSM"
+            },
+            "2": {
+                "name": "Team GODLIKE",
+                "link": "https://liquipedia.net/pubgmobile/GodLike_Esports"
+            },
+            "3": {
+                "name": "Team 7SEAS",
+                "link": "https://liquipedia.net/pubgmobile/7Sea_Esports"
+            },
+            "4": {
+                "name": "Team ENIGMA",
+                "link": "hhttps://www.enigmagamingindia.com/"
+            }
+        },
+        "signup": "/images/sign.png"
+    },
+    "footer": {
+        "icons": ["https://cdn-icons-png.flaticon.com/512/3670/3670127.png","https://cdn-icons-png.flaticon.com/512/187/187209.png","https://cdn-icons-png.flaticon.com/512/3955/3955024.png","https://cdn-icons-png.flaticon.com/512/5968/5968764.png","https://cdn-icons-png.flaticon.com/512/3670/3670157.png"],
+        "logo": "/images/logo1.png",
+        "copyright": "© 2022, Copyright: ESportle : Tanishq Bhatt, Aayush  Dubey & Siddhant Sharma.",
+        "end": "'GG' stands for a  'GOOD GAME'"
+    },
+
+    "sliding":{
+    
+            "link1": "https://www.ea.com/en-gb/games/apex-legends",
+            "link2": "https://na.battlegrounds.pubg.com/",
+            "link3": "https://playvalorant.com/en-gb/",
+            "img1": "url('images/apex.png')",
+            "img2":"url('images/pubg.png')",
+            "img3":"url('images/valorant.png')"
+    },
+    
+    "promotednews":{
+        "head": "Hottest in Games",
+        "nlink1":"/title/4s",
+        "nlink2":"/title/4",
+        "title":"Sony won’t replace damaged The Last of Us Part 1 Firefly Editions, fans claim",
+        "p1":"Many buyers of the Firefly Edition of The Last of Us Part 1 are reporting the game was delivered to them massively damaged, and now Sony is apparently refusing to replace their copies.",
+        "p2":"There’s nothing worse than getting a damaged package in the mail, especially when the parcel is a limited edition game.For those who purchased the special Firefly Edition of The Last of Us Part 1, the launch day of the action-adventure remake quickly went from celebration to nightmare as many fans reported their copies were beaten up when delivered...",
+        "img": "https://c4.wallpaperflare.com/wallpaper/362/521/179/game-naughty-dog-the-last-of-us-part-ii-wallpaper-preview.jpg"
+    },
+    "watchon":{
+        "head":"WATCH ON ESPORTLE",
+        "tv1":"/images/tv.png",
+        "tv2":"/images/tv.png",
+        "tv3":"/images/tv.png",
+
+        "embed":"https://www.youtube.com/embed/qa454jRcba8?start=2",
+        "team1_1":"G2 ESPORTS",
+        "team1pic_1":"/images/logos/g2e.png",
+        "team2_1":"NATUS VINCERE",
+        "team2pic_1":"/images/logos/nan.png",
+
+        "embed_2":"https://www.youtube.com/embed/jcY60vL7208?start=10&showinfo=0&autohid=1",
+        "team1_2":"SENTINELS",
+        "team1pic_2":"/images/logos/sentinals.png",
+        "team2_2":"100T",
+        "team2pic_2":"/images/logos/100t.png",
+
+        "embed_3":"https://www.youtube.com/embed/xZLFVV2qxQQ?start=1654",
+        "team1_3":"FNC",
+        "team1pic_3":"/images/logos/fnc.png",
+        "team2_3":"IG",
+        "team2pic_3":"/images/logos/ig.png"
+    },
+
+    "players":{
+        "header":"PLAYERS",
+        "arrows1":"/images/arrows1.png",
+        "arrows2":"/images/arrows2.png",
+            
+        "img1":"url(https://images6.alphacoders.com/962/962471.jpg)",
+        "name1":"Lionel Messi",
+
+        "img2":"url(https://c4.wallpaperflare.com/wallpaper/350/470/398/soccer-neymar-brazilian-paris-saint-germain-f-c-wallpaper-preview.jpg)",
+        "name2":"Neyamr Jr.",
+
+        "img3":"url(https://c4.wallpaperflare.com/wallpaper/558/12/1019/soccer-luis-suarez-fc-barcelona-luis-suarez-wallpaper-preview.jpg)",
+        "name3":"Luis Suarez",
+            
+        "img4":"url(https://c4.wallpaperflare.com/wallpaper/881/819/618/soccer-karim-benzema-french-real-madrid-c-f-wallpaper-preview.jpg)",
+        "name4":"Karim Benzema"
+    },
+    "highlights":{
+        
+        "match":"MATCH HIGHLIGHTS",
+        
+        "link1":"https://www.youtube.com/embed/RSsYotUD6R0?start=2",
+        "name1":"Apex Legends - Funny Moments & Best Highlights",
+
+        "link2":"https://www.youtube.com/embed/OdeQluDGa8M?start=3",
+        "name2":"BEST VALORANT PLAYS OF 2021 | VALORANT MONTAGE",
+
+        "link3":"https://www.youtube.com/embed/G6RayaBJpAI?start=4",
+        "name3":"TenZ : INHUMAN's Valorant match Highlights",
+
+        "link4":"https://www.youtube.com/embed/e7csWyElaIk",
+        "name4":"50+ BEST PLAYS from ALGS Championship 2022"
+    },
+    "teams":{
+        "head":"TOP 5 TEAMS IN YOUR COUNTRY",
+
+        "logo1":"url('/images/logos/soul.png')",
+        "link1":"https://liquipedia.net/pubgmobile/Team_SouL",
+        "fname1":"TEAM",
+        "lname1":"SOUL",
+
+        "logo2":"url('/images/logos/tsm.png')",
+        "link2":"https://liquipedia.net/pubgmobile/TSM",
+        "fname2":"TEAM",
+        "lname2":"TSM",
+
+        "logo3":"url('/images/logos/gl.png')",
+        "link3":"https://liquipedia.net/pubgmobile/GodLike_Esports",
+        "fname3":"TEAM",
+        "lname3":"GODLIKE",
+
+        "logo4":"url('/images/logos/7seas.png')",
+        "link4":"https://liquipedia.net/pubgmobile/7Sea_Esports",
+        "fname4":"TEAM",
+        "lname4":"7SEAS",
+
+        "logo5":"url('/images/logos/enigma.png')",
+        "link5":"https://liquipedia.net/valorant/Enigma_Gaming",
+        "fname5":"TEAM",
+        "lname5":"ENIGMA"
+    },
+
+    "tweets":{
+        "head":"TOP TWEETS RIGHT NOW",
+        "quotel":"/images/apos.png",
+        "quoter":"/images/apos.png",
+        "desc":"A group of ex-Riot developers formed a new studio called Odyssey Interactive, and their first game is Omega Strikers. We played it...and couldn't stop playing it! Find out why we think this esports contender could be your next big multiplayer obsession. Viola Davis anchors an excellent ensemble in this rousing period piece about the Agojie warriors of Dahomey. The end is nigh! @DRX_VS & @OpTic have one last chance to go big or go home.",
+        "userimg":"https://pbs.twimg.com/profile_images/1565420514105081856/mK6SVkge_400x400.jpg",
+        "username":"IGN",
+        "role":"MEDIA@IGN" 
+    }
+}

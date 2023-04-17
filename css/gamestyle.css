@@ -1,0 +1,102 @@
+body{
+    background-color: #000000;
+}
+
+.bg-video{
+  height: 90vh;
+  width: 100vw;
+
+}
+video{
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  opacity: 0.5;
+}
+.head{
+  font-size: 8.5vw;
+  position: relative;
+  top: 7vh;
+  left: 2vw;
+  
+}
+
+
+h1{
+    font-family: 'Teko', sans-serif;
+    font-size: 3rem;
+    margin-left: 5vw;
+    margin-top: 2vh;
+  }
+  .game-cards{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .gcard{
+    margin: 2vh 1.5vh;
+    height: 30vh;
+    width: 28.4vw;
+    border-radius: 20px;
+    background-size: 30vw 30vh;
+    transition: 100ms ease-in;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .gcard:nth-of-type(1), .gcard:nth-of-type(2){
+    height: 40vh;
+    width: 38vw;
+    border-radius: 20px;
+    background-size: 38vw 40vh;
+  }
+.gcard:hover{
+    border: 2px solid rgb(214, 208, 208);
+    transform: scale(1.01);
+}
+  @media (max-width: 850px) {
+    .gcard, .gcard:nth-of-type(1), .gcard:nth-of-type(2){
+        margin: 2vh 1.5vh;
+        height: 50vh;
+        width: 90vw;
+        background-size: 90vw 50vh;
+    
+        background-repeat: no-repeat;
+        background-position: center;
+    }}
+
+
+
+
+    .arrow {
+      box-sizing: border-box;
+      height: 5vw;
+      width: 5vw;
+      border-style: solid;
+      border-color: white;
+      border-width: 0px 1px 1px 0px;
+      transform: rotate(45deg);
+      transition: border-width 150ms ease-in-out;
+      position: absolute;
+      bottom: 15vh;
+      left: 47.5vw;
+    }
+    
+    .arrow:hover {
+      border-bottom-width: 4px;
+      border-right-width: 4px;
+    }
+    
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #0e242d;
+      height: 100vh;
+    }
